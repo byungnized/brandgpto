@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrandGPTO</title>
+    <meta name="description" content="GEO solution by provided by Brandots and GPTO">
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fff67761-bbed-4d58-a014-6b19bb0059a8/id-preview-6583d5bf--5c694f16-05a7-412b-b3c2-5098126790cb.lovable.app-1774088557897.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fff67761-bbed-4d58-a014-6b19bb0059a8/id-preview-6583d5bf--5c694f16-05a7-412b-b3c2-5098126790cb.lovable.app-1774088557897.png">
+    <meta property="og:title" content="BrandGPTO">
+  <meta name="twitter:title" content="BrandGPTO">
+  <meta property="og:description" content="GEO solution by provided by Brandots and GPTO">
+  <meta name="twitter:description" content="GEO solution by provided by Brandots and GPTO">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <script type="module" crossorigin src="./assets/index--9VqvNcB.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CA363ckB.css">
+
+<style>
+  /* 모니터링 가로 스크롤 — 사이트 보더/프라이머리 톤과 맞춤 */
+  .monitoring-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--primary) / 0.4) hsl(var(--muted));
+  }
+  .monitoring-scroll::-webkit-scrollbar {
+    height: 10px;
+  }
+  .monitoring-scroll::-webkit-scrollbar-track {
+    margin: 0 0.25rem;
+    background: hsl(var(--muted));
+    border-radius: 9999px;
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .monitoring-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--primary) / 0.45),
+      hsl(220 100% 58% / 0.45)
+    );
+    border-radius: 9999px;
+    border: 2px solid hsl(var(--muted));
+  }
+  .monitoring-scroll::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.65);
+  }
+  /* 한·영 혼용 시 줄바꿈에서 단어/어절이 잘리지 않도록 */
+  html, body, #root {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-break: strict;
+    hyphens: manual;
+  }
+  .static-share-footer {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0f0f10;
+    color: #a1a1aa;
+    padding: 1.5rem 1.25rem 2rem;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .static-share-footer h2 {
+    color: #fafafa;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+  .static-share-footer ul {
+    margin: 0 0 1rem;
+    padding-left: 1.15rem;
+  }
+  .static-share-footer li {
+    margin-bottom: 0.35rem;
+  }
+  .static-share-footer .hint {
+    font-size: 0.75rem;
+    opacity: 0.85;
+    margin-bottom: 1rem;
+  }
+  #copy-html-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.55rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    background: rgba(56, 189, 248, 0.12);
+    color: #7dd3fc;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  #copy-html-btn:hover {
+    background: rgba(56, 189, 248, 0.2);
+    border-color: rgba(56, 189, 248, 0.55);
+  }
+  #copy-html-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  #copy-html-status {
+    margin-top: 0.65rem;
+    font-size: 0.75rem;
+    color: #86efac;
+    min-height: 1.2em;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  #root {
+    flex: 1 0 auto;
+  }
+</style>
+</head>
+
+  <body>
+    <div id="root"></div>
+    <footer class="static-share-footer" aria-label="공유 안내">
+      <h2>다른 사람도 보려면</h2>
+      <p class="hint">
+        이 사이트는 <code style="font-size:0.85em;">index.html</code>과 <code style="font-size:0.85em;">assets/</code> 폴더가 함께 있어야 합니다. 아래 중 하나로 전체 폴더를 올리면 됩니다.
+      </p>
+      <ul>
+        <li><strong>Netlify Drop</strong> — <a href="https://app.netlify.com/drop" target="_blank" rel="noopener noreferrer" style="color:#7dd3fc;">netlify.com/drop</a>에 <code>brandgpto</code> 폴더를 드래그</li>
+        <li><strong>GitHub Pages</strong> — 저장소에 푸시 후 Settings → Pages에서 배포</li>
+        <li><strong>Cloudflare Pages / Vercel</strong> — 같은 폴더를 프로젝트 루트로 연결</li>
+        <li><strong>ZIP 공유</strong> — <code>brandgpto</code> 폴더를 압축해 보내고, 받는 사람은 압축 풀 뒤 로컬 서버로 열기</li>
+      </ul>
+      <button type="button" id="copy-html-btn">HTML 파일 복사하기</button>
+      <p id="copy-html-status" role="status" aria-live="polite"></p>
+    </footer>
+    <script>
+      (function () {
+        var btn = document.getElementById("copy-html-btn");
+        var status = document.getElementById("copy-html-status");
+        if (!btn || !status) return;
+        btn.addEventListener("click", function () {
+          status.textContent = "";
+          function ok(msg) {
+            status.textContent = msg;
+            status.style.color = "#86efac";
+          }
+          function err(msg) {
+            status.textContent = msg;
+            status.style.color = "#fca5a5";
+          }
+          if (location.protocol === "file:") {
+            err("브라우저에서 파일을 직접 열면 복사 API가 막힐 수 있어요. 터미널에서 이 폴더로 이동 후 npx serve 실행 뒤, 열린 주소(예: http://localhost:3000)에서 다시 눌러 주세요.");
+            return;
+          }
+          fetch("./index.html", { cache: "no-store" })
+            .then(function (r) {
+              if (!r.ok) throw new Error("load");
+              return r.text();
+            })
+            .then(function (html) {
+              return navigator.clipboard.writeText(html);
+            })
+            .then(function () {
+              ok("index.html 내용을 클립보드에 복사했습니다. (동작하려면 assets 폴더도 같이 배포해야 합니다.)");
+            })
+            .catch(function () {
+              err("복사에 실패했습니다. index.html을 에디터에서 직접 열어 전체 선택·복사해 주세요.");
+            });
+        });
+      })();
+    </script>
+</body>
+</html>
