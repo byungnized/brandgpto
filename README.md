@@ -30,8 +30,16 @@ python -m http.server 8080
 React Router가 루트(`/`)만 보면 404가 나므로, 번들에 **`basename: "/brandgpto"`** 조건부 로직이 들어 있습니다  
 (주소가 `/brandgpto` 또는 `/brandgpto/...`일 때만 적용, 로컬 `/`에서는 비움).
 
-- 열 주소 예: **https://byungnized.github.io/brandgpto/**  
+- 열 주소: **https://byungnized.github.io/brandgpto/** 또는 **`/brandgpto` (끝 슬래시 없음)** — `index.html` 상단 스크립트가 `<base href="/brandgpto/">` 를 넣어 에셋 경로가 깨지지 않게 함.
+- **`.nojekyll`**: Jekyll 처리 끔 (정적 파일 그대로 서빙).
+- **`404.html`**: `index.html`과 동일 복사본 — 잘못된 하위 경로로 들어와도 SPA가 뜨도록.
 - 저장소 이름을 바꾸면 `index--9VqvNcB.js` 안의 `brandgpto` 문자열을 새 이름에 맞게 수정해야 합니다.
+
+### Actions는 성공인데 사이트가 안 뜰 때
+
+1. **Settings → Pages** 에서 Source가 **`main` / `(root)`** 인지 확인.  
+2. **가장 최근 커밋**이 배포됐는지 Actions에서 해당 run의 commit SHA 확인 (예전 `22deadd`만 보이면 **Re-run all jobs** 하거나 빈 커밋 푸시).  
+3. 강력 새로고침(Ctrl+Shift+R) 또는 시크릿 창.
 
 ## 파일
 
