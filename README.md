@@ -24,6 +24,15 @@ python -m http.server 8080
 
 브라우저에서 `http://localhost:3000` (serve 기본) 또는 `http://localhost:8080` 접속.
 
+## GitHub Pages (`/저장소이름/` 주소)
+
+프로젝트 Pages는 **`https://<사용자>.github.io/<저장소>/`** 에 올라갑니다.  
+React Router가 루트(`/`)만 보면 404가 나므로, 번들에 **`basename: "/brandgpto"`** 조건부 로직이 들어 있습니다  
+(주소가 `/brandgpto` 또는 `/brandgpto/...`일 때만 적용, 로컬 `/`에서는 비움).
+
+- 열 주소 예: **https://byungnized.github.io/brandgpto/**  
+- 저장소 이름을 바꾸면 `index--9VqvNcB.js` 안의 `brandgpto` 문자열을 새 이름에 맞게 수정해야 합니다.
+
 ## 파일
 
 - `index.html` — 엔트리 (자산 경로는 `./assets/…` 로 로컬용 수정됨)
