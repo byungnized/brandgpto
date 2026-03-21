@@ -24,6 +24,13 @@ python -m http.server 8080
 
 브라우저에서 `http://localhost:3000` (serve 기본) 또는 `http://localhost:8080` 접속.
 
+## GitHub Pages — 반드시 설정 (배포가 안 될 때)
+
+1. GitHub 저장소 **Settings** → **Pages**
+2. **Build and deployment** → **Source** 를 **`GitHub Actions`** 로 선택 (「Deploy from a branch」가 아님)
+3. 저장소 루트에 **`.github/workflows/deploy-pages.yml`** 이 있어야 `main` 푸시마다 자동 배포됨
+4. 첫 실행 후 **Actions** 탭에서 워크플로가 초록 체크인지 확인 → 몇 분 뒤 **`https://<사용자>.github.io/<저장소>/`** 접속
+
 ## GitHub Pages (`/저장소이름/` 주소)
 
 프로젝트 Pages는 **`https://<사용자>.github.io/<저장소>/`** 에 올라갑니다.  
